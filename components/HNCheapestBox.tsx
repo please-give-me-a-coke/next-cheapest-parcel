@@ -24,7 +24,7 @@ function toPrice(item: any): string | undefined {
 }
 
 export default function HNCheapestBox() {
-    const [type, setType] = useState("DOMESTIC");
+    const [type, setType] = useState("STORE_TO_HOUSE");
     const [region, setRegion] = useState("SAME_AREA");
     const [weight, setWeight] = useState("1000");
     const [loading, setLoading] = useState(false);
@@ -88,7 +88,7 @@ export default function HNCheapestBox() {
                         <div>
                             <div style={{ fontSize: 13, fontWeight: 600, marginBottom: 6 }}>Type</div>
                             <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-                                {[{ key: "DOMESTIC", label: "국내택배" }, { key: "HALF_PRICE", label: "반값택배" }].map((t) => (
+                                {[{ key: "STORE_TO_HOUSE", label: "국내택배" }, { key: "STORE_TO_STORE", label: "반값택배" }].map((t) => (
                                     <button key={t.key} type="button" onClick={() => setType(t.key)} style={type === t.key ? chipActive : chip}>{t.label}</button>
                                 ))}
                             </div>

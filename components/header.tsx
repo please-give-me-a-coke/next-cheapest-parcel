@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const navItems = [
   { title: 'Hacker News-style' },
-  { title: 'Open API ↗', href: 'https://api.cheapest-parcel.dedyn.io/parcels-prices/cheapest?type=DOMESTIC&region=OTHER_AREA&weight=1000&continue' },
+  { title: 'Open API ↗', href: 'https://api.cheapest-parcel.dedyn.io/parcels-prices/cheapest?type=STORE_TO_HOUSE&region=OTHER_AREA&weight=1000&continue' },
 ]
 
 export default function Header() {
