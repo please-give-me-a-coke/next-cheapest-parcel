@@ -88,7 +88,7 @@ export default function HNCheapestBox() {
                         <div>
                             <div style={{ fontSize: 13, fontWeight: 600, marginBottom: 6 }}>Type</div>
                             <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-                                {[{ key: "STORE_TO_HOUSE", label: "국내택배" }, { key: "STORE_TO_STORE", label: "반값택배" }].map((t) => (
+                                {[{ key: "STORE_TO_HOUSE", label: "편의점에서 집으로" }, { key: "STORE_TO_STORE", label: "편의점에서 편의점으로" }].map((t) => (
                                     <button key={t.key} type="button" onClick={() => setType(t.key)} style={type === t.key ? chipActive : chip}>{t.label}</button>
                                 ))}
                             </div>
